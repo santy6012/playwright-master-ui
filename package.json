@@ -1,0 +1,28 @@
+{
+  "name": "playwright-ui-master",
+  "version": "1.0.0",
+  "description": "A Playwright UI automation project for end-to-end testing of a public website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --project=msedge",
+    "test:dev": "cross-env ENV=dev playwright test --project=msedge",
+    "test:qa": "cross-env ENV=qa playwright test --project=msedge",
+    "test:prod": "cross-env ENV=prod playwright test --project=msedge"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "ui"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^16.0.0",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.54.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
+  }
+}
