@@ -57,6 +57,20 @@ npx playwright show-report
 ## Dependencies
 This project uses Playwright for browser automation. Ensure you have the necessary browsers installed, especially Microsoft Edge, as the tests are configured to run on it.
 
+## Codegen - To generate script
+```
+npx playwright codegen https://web-url.com --output src/tests/generated.spec.ts
+```
+
+## Run generated code
+```
+npx playwright test src/tests/generated.spec.ts
+```
+
+## Install Browsers (If outdated)
+```
+npx playwright install
+```
 ## Contributing
 Feel free to contribute to this project by submitting issues or pull requests. Make sure to follow the coding standards and include tests for any new features.
 
